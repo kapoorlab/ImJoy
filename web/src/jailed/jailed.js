@@ -742,7 +742,6 @@ DynamicPlugin.prototype._loadPlugin = async function() {
     if (this.config.requirements) {
       await this._connection.execute({
         type: "requirements",
-        lang: this.config.lang,
         requirements: this.config.requirements,
         env: this.config.env,
       });
