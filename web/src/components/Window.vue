@@ -212,6 +212,9 @@ export default {
             this.w.api[k] = comp[k];
           }
         }
+        this.w.api.set = (data)=>{
+          this.w.data = data;
+        }
       }
       this.w.api.emit("ready");
     },
