@@ -2294,7 +2294,6 @@ export class PluginManager {
         const p = await this.reloadPluginRecursively({
           uri: INTERNAL_PLUGINS[plugin_name].uri,
         });
-        console.log("BrowserFS loaded.");
         return p.api;
       }
 

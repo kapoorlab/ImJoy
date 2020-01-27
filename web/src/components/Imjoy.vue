@@ -529,7 +529,7 @@
                     >
                       <md-icon>share</md-icon>Share
                     </md-menu-item>
-                    <md-menu-item v-else @click="downloadPlugin(plugin.id)">
+                    <md-menu-item @click="downloadPlugin(plugin.id)">
                       <md-icon>cloud_download</md-icon>Export
                     </md-menu-item>
                     <md-menu-item @click="editPlugin(plugin.id)">
